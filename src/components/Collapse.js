@@ -12,9 +12,9 @@ class Collapse extends React.Component {
     //     // bind yöntemi de genelde kullanılan bir yöntem değildir.
     //     // genelde arrow function yöntemi
     // }
-    
+
     // yukarıdaki constructor methodunda tanımladığımız state'i aşağıdaki şekilde de tanımlayabiliriz
-    state= {showContent:false}
+    state = { showContent: false }
 
     /*    showMore() {
             //console.log(this)
@@ -29,11 +29,11 @@ class Collapse extends React.Component {
         this.setState({ showContent: !this.state.showContent })
     }
 
-    componentDidMount(){
+    componentDidMount() {
         console.log('component did mount calisti')
     }
 
-    componentDidUpdate(){
+    componentDidUpdate() {
         console.log('componentdidupdate calisti')
     }
     render() {
@@ -46,12 +46,12 @@ class Collapse extends React.Component {
 
                     {React.Children.map(this.props.children, children => children.props.cardTitle)}
 
-                    </button>
+                </button>
                 {
                     this.state.showContent ? (
                         <div className="collapse show">
                             {/* {this.props.children} komutu yerine aşağıdaki kodu yazdık*/}
-                            {React.Children.map(this.props.children, children=>children)}
+                            {React.Children.map(this.props.children, children => children)}
                         </div>
 
                     ) :
