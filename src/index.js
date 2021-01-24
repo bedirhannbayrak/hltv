@@ -4,39 +4,43 @@ import Card from './components/Card'
 import Collapse from './components/Collapse'
 
 
-
 function App() {
     return (
-        <div>
+        <div className='container'>
+            <div className="row">
+                <div className='card-group w-100'>
+                    <div className="col">
+                        <Collapse href='collapseExample1'>
+                            <Card
+                                cardTitle='Beşiktaş'
+                                cardText='lorem ipsum text I'
+                                updateTime='3 minutes ago'
+                                image='https://picsum.photos/id/1/200/300'
+                            />
+                        </Collapse>
+                    </div>
+                    <div className="col">
+                        <Collapse href='collapseExample2'>
+                            <Card
 
-            <div className='card-group'>
-                <Collapse href='collapseExample1'>
-                    <Card
-                        cardTitle='Beşiktaş'
-                        cardText='lorem ipsum text I'
-                        updateTime='3 minutes ago'
-                        image='https://picsum.photos/id/1/200/300'
-                    />
-                </Collapse>
-                <Collapse href='collapseExample2'>
-                    <Card
-                        cardTitle='Gala'
-                        cardText='lorem ipsum text II'
-                        updateTime='3 minutes ago'
-                        image='https://picsum.photos/id/2/200/300'
-                    />
-                </Collapse>
-                <Collapse href='collapseExample3'>
-                    <Card
-                        cardTitle='fener'
-                        cardText='lorem ipsum text III'
-                        updateTime='3 minutes ago'
-                        image='https://picsum.photos/id/5/200/300'
-                    />
-                </Collapse>
-
+                                cardText='lorem ipsum text II'
+                                updateTime='3 minutes ago'
+                                image='https://picsum.photos/id/2/200/300'
+                            />
+                        </Collapse>
+                    </div>
+                    <div className="col">
+                        <Collapse href='collapseExample3'>
+                            <Card
+                                cardTitle='Beşiktaş'
+                                cardText='lorem ipsum text III'
+                                updateTime='3 minutes ago'
+                                image='https://picsum.photos/id/3/200/300'
+                            />
+                        </Collapse>
+                    </div>
+                </div>
             </div>
-
 
         </div>
     )
